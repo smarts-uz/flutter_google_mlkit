@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_google_mlkit/views/face_mesh_detector_view.dart';
+import 'package:flutter_google_mlkit/views/label_detector_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -42,7 +42,8 @@ class Home extends StatelessWidget {
                     children: [
                       //CustomCard('Barcode Scanning', BarcodeScannerView()),
                       //CustomCard('Face Detection', FaceDetectorView()),
-                      CustomCard('Face Mesh Detection', FaceMeshDetectorView()),
+                      //CustomCard('Face Mesh Detection', FaceMeshDetectorView()),
+                      CustomCard('Image Labeling', ImageLabelView()),
                     ],
                   ),
                 ],
