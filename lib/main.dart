@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_mlkit/views/bar_scanner_view.dart';
+import 'package:flutter_google_mlkit/views/object_detector_view.dart';
+import 'package:flutter_google_mlkit/views/face_detector_view.dart';
+import 'package:flutter_google_mlkit/views/face_mesh_detector_view.dart';
 import 'package:flutter_google_mlkit/views/label_detector_view.dart';
 
 void main() async {
@@ -40,10 +44,11 @@ class Home extends StatelessWidget {
                   ExpansionTile(
                     title: Text('Vision APIs'),
                     children: [
-                      //CustomCard('Barcode Scanning', BarcodeScannerView()),
-                      //CustomCard('Face Detection', FaceDetectorView()),
-                      //CustomCard('Face Mesh Detection', FaceMeshDetectorView()),
+                      CustomCard('Barcode Scanning', BarcodeScannerView()),
+                      CustomCard('Face Detection', FaceDetectorView()),
+                      CustomCard('Face Mesh Detection', FaceMeshDetectorView()),
                       CustomCard('Image Labeling', ImageLabelView()),
+                      CustomCard('Object Detection', ObjectDetectorView()),
                     ],
                   ),
                 ],
