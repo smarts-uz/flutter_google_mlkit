@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_mlkit/views/digital_ink_recognizer_view.dart';
 import 'package:flutter_google_mlkit/views/bar_scanner_view.dart';
 import 'package:flutter_google_mlkit/views/object_detector_view.dart';
 import 'package:flutter_google_mlkit/views/text_detector_view.dart';
@@ -51,6 +52,7 @@ class Home extends StatelessWidget {
                       CustomCard('Image Labeling', ImageLabelView()),
                       CustomCard('Object Detection', ObjectDetectorView()),
                       CustomCard('Text Recognition', TextRecognizerView()),
+                      CustomCard('Digital Ink Recognition', DigitalInkView()),
                     ],
                   ),
                 ],
