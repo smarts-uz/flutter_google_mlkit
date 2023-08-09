@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_google_mlkit/nlp_views/entity_extraction_view.dart';
 import 'package:flutter_google_mlkit/nlp_views/language_identifier_view.dart';
 import 'package:flutter_google_mlkit/nlp_views/language_translator_view.dart';
 import 'package:flutter_google_mlkit/nlp_views/smart_reply_view.dart';
@@ -72,6 +73,7 @@ class Home extends StatelessWidget {
                       CustomCard(
                           'On-device Translation', LanguageTranslatorView()),
                       CustomCard('Smart Reply', SmartReplyView()),
+                      CustomCard('Entity Extraction', EntityExtractionView()),
                     ],
                   ),
                 ],
