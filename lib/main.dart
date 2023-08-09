@@ -1,4 +1,6 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_google_mlkit/firebase_options.dart';
 import 'package:flutter_google_mlkit/nlp_views/entity_extraction_view.dart';
 import 'package:flutter_google_mlkit/nlp_views/language_identifier_view.dart';
 import 'package:flutter_google_mlkit/nlp_views/language_translator_view.dart';
@@ -15,6 +17,9 @@ import 'package:flutter_google_mlkit/views/label_detector_view.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
