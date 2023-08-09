@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_google_mlkit/nlp_views/language_identifier_view.dart';
+import 'package:flutter_google_mlkit/nlp_views/language_translator_view.dart';
 import 'package:flutter_google_mlkit/views/digital_ink_recognizer_view.dart';
 import 'package:flutter_google_mlkit/views/pose_detector_view.dart';
 import 'package:flutter_google_mlkit/views/selfie_segmenter_view.dart';
@@ -67,6 +68,8 @@ class Home extends StatelessWidget {
                     title: Text('Natural Language APIs'),
                     children: [
                       CustomCard('Language ID', LanguageIdentifierView()),
+                      CustomCard(
+                          'On-device Translation', LanguageTranslatorView()),
                     ],
                   ),
                 ],
